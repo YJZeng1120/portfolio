@@ -4,7 +4,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="py-12 scroll-mt-16"
+      className="py-12 scroll-mt-14"
       style={{ borderTop: '1px solid var(--border)' }}
     >
       <div className="max-w-5xl mx-auto px-6 md:px-8">
@@ -15,14 +15,14 @@ export default function Skills() {
 
         {/* Heading */}
         <h2
-          className="font-display text-[var(--text)] mb-8 leading-tight"
+          className="font-display text-[var(--text)] mb-10 leading-tight"
           style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)' }}
         >
           Technical expertise
         </h2>
 
         {/* Skill groups */}
-        <div className="space-y-7">
+        <div className="space-y-8">
           {skills.map(group => (
             <div key={group.category}>
               {/* Category label */}

@@ -14,6 +14,7 @@
 :root {
   --bg: #ffffff;
   --surface: #f4f4f5;
+  --surface-2: #fafafa;
   --surface-hover: #e4e4e7;
   --border: #e4e4e7;
   --border-strong: #a1a1aa;
@@ -31,6 +32,7 @@
 html.dark {
   --bg: #09090b;
   --surface: #18181b;
+  --surface-2: #111113;
   --surface-hover: #27272a;
   --border: #27272a;
   --border-strong: #3f3f46;
@@ -99,46 +101,157 @@ h1, h2, h3 {
   font-family: 'DM Mono', monospace;
   font-size: 0.72rem;
   color: var(--text-muted);
-  background: var(--surface);
+  background: transparent;
   transition: border-color 0.15s, color 0.15s, background-color 0.15s;
   cursor: default;
   white-space: nowrap;
+  line-height: 1.5;
 }
 
 .skill-badge:hover {
-  border-color: var(--accent);
-  color: var(--bg);
-  background-color: var(--accent);
+  border-color: var(--border-strong);
+  color: var(--text);
+  background-color: var(--surface);
 }
 
 /* ── Project card ── */
 .project-card {
-  background-color: var(--surface);
+  background-color: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 0.75rem;
   overflow: hidden;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
-              box-shadow 0.25s ease,
-              border-color 0.25s ease;
-  box-shadow: var(--shadow);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.2s ease,
+              border-color 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
   border-color: var(--border-strong);
+}
+
+html.dark .project-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+html.dark .project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ── Tech pill (used inside cards and modal) ── */
+.tech-pill {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  background: transparent;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4375rem 0.875rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--accent);
+  background: var(--accent);
+  color: var(--bg);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4375rem 0.875rem;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border-strong);
+  background: transparent;
+  color: var(--text);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.btn-outline:hover {
+  background-color: var(--surface);
+  border-color: var(--border-strong);
+}
+
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4375rem 0.875rem;
+  border-radius: 0.375rem;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.btn-ghost:hover {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+/* ── Dialog panel (wrapper inside <dialog>) ── */
+.dialog-panel {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15), 0 4px 16px rgba(0, 0, 0, 0.08);
+  width: 100%;
+}
+
+html.dark .dialog-panel {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.7), 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* ── Dialog backdrop ── */
 dialog::backdrop {
-  background: rgba(0, 0, 0, 0.55);
-  backdrop-filter: blur(3px);
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
 }
 
 dialog {
   margin: auto;
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 
 dialog[open] {
@@ -147,12 +260,15 @@ dialog[open] {
 
 /* ── Scrollbar ── */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 4px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--bg);
+  background: transparent;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--border-strong);
-  border-radius: 3px;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-strong);
 }

@@ -18,12 +18,10 @@ export interface SkillGroup {
 export const profile = {
   name: 'Crystal Zeng',
   nameZh: '曾詠晶',
-  title: 'Flutter Developer',
-  tagline: 'I build thoughtful digital experiences.',
+  title: 'Flutter Engineer',
   bio: 'Passionate about clean code and elegant interfaces. I thrive at the intersection of design and engineering, turning ideas into products people enjoy using.',
   email: 'k23055456@gmail.com',
   photo: 'https://placehold.co/200x200/e0d5c8/7a6040?text=Photo',
-  summary: `I'm a passionate developer who loves crafting performant, accessible, and beautiful web applications. I thrive at the intersection of design and engineering — turning ideas into products that people genuinely enjoy using.\n\nWhen I'm not writing code, I'm exploring emerging technologies, contributing to open source, and pushing the boundaries of what the web can do.`,
 }
 
 export const skills: SkillGroup[] = [
@@ -43,7 +41,7 @@ export const skills: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
-    name: 'Project Alpha',
+    name: 'Store Ease 商店輕鬆理',
     description:
       'A full-stack task management app with real-time collaboration, drag-and-drop boards, and team workspaces.',
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Project+Alpha',
@@ -53,7 +51,7 @@ export const projects: Project[] = [
     demo: 'https://example.com',
   },
   {
-    name: 'Project Beta',
+    name: 'Realtime Chat App',
     description:
       'An e-commerce platform featuring a headless CMS, Stripe payment integration, and a responsive storefront.',
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Project+Beta',
@@ -62,7 +60,7 @@ export const projects: Project[] = [
     github: 'https://github.com',
   },
   {
-    name: 'Project Gamma',
+    name: 'Expense Manager App',
     description:
       'An interactive data visualization dashboard transforming complex datasets into clear, animated charts.',
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Project+Gamma',
@@ -82,7 +80,7 @@ export const projects: Project[] = [
     demo: 'https://example.com',
   },
   {
-    name: 'Company Project A',
+    name: 'CMS車隊管理',
     description:
       'Internal enterprise platform for workflow automation and cross-department data integration.',
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Company+Project+A',
@@ -90,7 +88,7 @@ export const projects: Project[] = [
     type: 'company',
   },
   {
-    name: 'Company Project B',
+    name: 'CMS車隊管理網站',
     description:
       'Customer-facing mobile web app for real-time order tracking and support ticket management.',
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Company+Project+B',
