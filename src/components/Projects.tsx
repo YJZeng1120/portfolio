@@ -171,7 +171,7 @@ export default function Projects() {
                     className="btn-ghost"
                   >
                     <ExternalLink size={13} />
-                    Live Demo
+                    Demo
                   </a>
                 )}
                 {selected.appStore && (
