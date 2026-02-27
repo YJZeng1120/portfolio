@@ -22,7 +22,8 @@ export const profile = {
   name: "Crystal Zeng",
   nameZh: "曾詠晶",
   title: "Flutter Engineer",
-  bio: "專注於 Flutter 跨平台開發，具備 iOS/Android 上架實戰經驗與完整 CI/CD 流程。同時以 React/Next.js 與 Tailwind CSS 開發網頁介面。",
+
+  bio: "專注於 Flutter 跨平台開發，具備 iOS/Android 完整上架與 GitLab CI/CD 自動化發版經驗，並以 React/Next.js、TanStack 與 Zustand 開發網頁前端。",
   email: "k23055456@gmail.com",
   photo: "/portfolio/images/avatar.JPG"
 };
@@ -91,7 +92,7 @@ export const projects: Project[] = [
   {
     name: "Portfolio Website",
     description:
-      "以 React + TypeScript + TailwindCSS 開發的個人作品集，支援深色/亮色切換，並以 GitHub Actions CI/CD 自動部署至 GitHub Pages。",
+      "以 React 開發的個人作品集，支援深色/淺色模式切換，並以 GitHub Actions CI/CD 自動部署至 GitHub Pages。",
     image: "/portfolio/images/projects/portfolio_website.png",
     techs: ["React", "TypeScript", "TailwindCSS", "Vite", "GitHub Actions", "GitHub Pages"],
     type: "portfolio",

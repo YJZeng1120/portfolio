@@ -45,13 +45,6 @@ export default function Hero() {
 
             <div className="fade-up fade-up-2 flex flex-col sm:flex-row items-start sm:items-center gap-2">
               <a
-                href={`mailto:${profile.email}`}
-                className="btn-primary"
-              >
-                <Mail size={13} />
-                {profile.email}
-              </a>
-              <a
                 href="https://github.com/YJZeng1120"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -60,6 +53,13 @@ export default function Hero() {
               >
                 <GitHubSvg size={14} />
                 GitHub
+              </a>
+              <a
+                href={`mailto:${profile.email}`}
+                className="btn-primary"
+              >
+                <Mail size={13} />
+                {profile.email}
               </a>
             </div>
           </div>
