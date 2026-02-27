@@ -1,11 +1,11 @@
-import { skills } from '../data/portfolio'
+import { skills } from "../data/portfolio";
 
 export default function Skills() {
   return (
     <section
       id="skills"
       className="py-12 scroll-mt-14"
-      style={{ borderTop: '1px solid var(--border)' }}
+      style={{ borderTop: "1px solid var(--border)" }}
     >
       <div className="max-w-5xl mx-auto px-6 md:px-8">
         {/* Section label */}
@@ -16,14 +16,14 @@ export default function Skills() {
         {/* Heading */}
         <h2
           className="font-display text-[var(--text)] mb-10 leading-tight"
-          style={{ fontSize: 'clamp(1.6rem, 4vw, 2.4rem)' }}
+          style={{ fontSize: "clamp(1.6rem, 4vw, 2.4rem)" }}
         >
           Technical expertise
         </h2>
 
         {/* Skill groups */}
         <div className="space-y-8">
-          {skills.map(group => (
+          {skills.map((group) => (
             <div key={group.category}>
               {/* Category label */}
               <p className="font-mono text-xs tracking-[0.15em] uppercase text-[var(--text-muted)] mb-3">
@@ -32,8 +32,11 @@ export default function Skills() {
 
               {/* Badge row */}
               <div className="flex flex-wrap gap-2">
-                {group.items.map(item => (
-                  <span key={item} className="skill-badge">
+                {group.items.map((item) => (
+                  <span
+                    key={item}
+                    className="skill-badge"
+                  >
                     {item}
                   </span>
                 ))}
@@ -43,5 +46,5 @@ export default function Skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }
