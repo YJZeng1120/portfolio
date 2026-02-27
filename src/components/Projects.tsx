@@ -287,7 +287,7 @@ function ProjectCard({ project, onOpen }: { project: Project; onOpen: (p: Projec
         <h3 className="font-display text-[0.9375rem] font-semibold text-[var(--text)] leading-snug">
           {project.name}
         </h3>
-        <p className="text-[0.8125rem] text-[var(--text-muted)] leading-relaxed line-clamp-2 flex-1">
+        <p className="text-[0.8125rem] text-[var(--text-muted)] leading-relaxed line-clamp-3 flex-1">
           {project.description}
         </p>
         <div className="flex flex-wrap gap-1.5 pt-1">
