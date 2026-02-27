@@ -4,10 +4,13 @@ export interface Project {
   name: string
   description: string
   image: string
+  youtube?: string  // YouTube video ID (if set, replaces image with embed)
   techs: string[]
   type: ProjectType
   github?: string
   demo?: string
+  appStore?: string
+  playStore?: string
 }
 
 export interface SkillGroup {
@@ -45,29 +48,33 @@ export const projects: Project[] = [
     description:
       'A full-stack task management app with real-time collaboration, drag-and-drop boards, and team workspaces.',
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Project+Alpha',
+    youtube: '8_l8sXE4EpE',
     techs: ['React', 'TypeScript', 'Node.js', 'Socket.io', 'PostgreSQL'],
     type: 'side',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    github: 'https://github.com/YJZeng1120/store_ease_demo',
+    demo: 'https://youtu.be/8_l8sXE4EpE',
   },
   {
     name: 'Realtime Chat App',
     description:
       'An e-commerce platform featuring a headless CMS, Stripe payment integration, and a responsive storefront.',
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Project+Beta',
+    youtube: 'ApJwXJoxOUQ',
     techs: ['Next.js', 'TailwindCSS', 'Stripe', 'Sanity'],
     type: 'side',
-    github: 'https://github.com',
+    github: 'https://github.com/YJZeng1120/realtime_chat_demo',
+    demo: 'https://youtu.be/ApJwXJoxOUQ',
   },
   {
     name: 'Expense Manager App',
     description:
       'An interactive data visualization dashboard transforming complex datasets into clear, animated charts.',
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Project+Gamma',
+    youtube: 'V1HvQEdIZ74',
     techs: ['React', 'D3.js', 'Python', 'FastAPI'],
     type: 'side',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    github: 'https://github.com/YJZeng1120/expense_manager_demo',
+    demo: 'https://youtu.be/V1HvQEdIZ74',
   },
   {
     name: 'Portfolio Website',
@@ -76,8 +83,7 @@ export const projects: Project[] = [
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Portfolio',
     techs: ['React', 'TypeScript', 'TailwindCSS', 'Vite'],
     type: 'portfolio',
-    github: 'https://github.com',
-    demo: 'https://example.com',
+    github: 'https://github.com/YJZeng1120/portfolio',
   },
   {
     name: 'CMS車隊管理',
@@ -86,6 +92,8 @@ export const projects: Project[] = [
     image: 'https://placehold.co/800x450/181818/e4e4e7?text=Company+Project+A',
     techs: ['Vue.js', 'TypeScript', 'Spring Boot', 'MySQL'],
     type: 'company',
+    appStore: 'https://apps.apple.com',   // TODO: replace with actual URL
+    playStore: 'https://play.google.com', // TODO: replace with actual URL
   },
   {
     name: 'CMS車隊管理網站',
