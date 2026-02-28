@@ -22,7 +22,7 @@ export const profile = {
   name: "Crystal Zeng",
   nameZh: "曾詠晶",
   title: "Flutter Engineer",
-  bio: "專注於 Flutter 跨平台開發，具備 iOS/Android 完整上架與 GitLab CI/CD 自動化發版經驗，並以 React/Next.js、TanStack 與 Zustand 開發網頁前端。",
+  bio: "專注於 Flutter 跨平台開發，熟悉 Riverpod / BLoC，具備 iOS/Android 完整上架與 GitLab CI/CD 自動化發版經驗，並以 React/Next.js、TanStack 與 Zustand 開發網頁前端。",
   email: "k23055456@gmail.com",
   photo: "/portfolio/images/avatar.JPG"
 };
