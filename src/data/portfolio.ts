@@ -120,7 +120,7 @@ export const projects: Project[] = [
   {
     name: "CMS 車隊管理網站",
     description:
-      "企業車隊管理後台網站。以 Next.js + Zustand 建構，整合 Google Maps API 即時地圖，整合 TanStack 生態系處理複雜資料，搭配 Tailwind + shadcn/ui，並以 Storybook 管理元件、Vitest 撰寫單元測試。",
+      "企業車隊管理後台。以 Next.js + Zustand 建構，實作 Google Maps 座標插值與幀動畫控制，並運用 TanStack 生態系處理複雜數據；搭配 Storybook 與 Vitest 確保開發規範與品質。",
     image: "/portfolio/images/projects/cms_website.png",
     techs: [
       "Next.js",
@@ -129,8 +129,8 @@ export const projects: Project[] = [
       "TanStack Table",
       "Zustand",
       "React Hook Form",
+      "Zod",
       "TailwindCSS",
-      "shadcn/ui",
       "Google Maps API"
     ],
     type: "company"
