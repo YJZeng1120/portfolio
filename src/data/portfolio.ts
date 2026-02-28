@@ -100,7 +100,7 @@ export const projects: Project[] = [
     name: "Portfolio Website",
     description:
       "以 React 開發的個人作品集，支援深色/淺色模式切換，並以 GitHub Actions CI/CD 自動部署至 GitHub Pages。",
-    image: "/portfolio/images/projects/portfolio_website.png",
+    image: "/portfolio/images/projects/portfolio_website.webp",
     techs: ["React", "TypeScript", "TailwindCSS", "Vite", "GitHub Actions", "GitHub Pages"],
     type: "portfolio",
     github: "https://github.com/YJZeng1120/portfolio"
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     name: "CMS 車隊管理 App",
     description:
       "上架雙平台的企業車隊管理 App，採 MVVM + Riverpod 架構，整合 MQTT、Background Location 及 Firebase 生態系（FCM、Crashlytics、App Distribution），並以 GitLab CI/CD + Flavorizr 建立多環境自動化發布流程。",
-    image: "/portfolio/images/projects/cms_app.png",
+    image: "/portfolio/images/projects/cms_app.webp",
     techs: [
       "Flutter",
       "Dart",
@@ -131,7 +131,7 @@ export const projects: Project[] = [
     name: "CMS 車隊管理網站",
     description:
       "企業車隊管理後台。以 Next.js + Zustand 建構，實作 Google Maps 座標插值與幀動畫控制，並運用 TanStack 生態系處理複雜數據；搭配 Storybook 與 Vitest 確保開發規範與品質。",
-    image: "/portfolio/images/projects/cms_website.png",
+    image: "/portfolio/images/projects/cms_website.webp",
     techs: [
       "Next.js",
       "TypeScript",
