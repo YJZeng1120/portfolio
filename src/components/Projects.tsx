@@ -40,7 +40,7 @@ export default function Projects() {
     >
       <div className="max-w-5xl mx-auto px-6 md:px-8">
         <p className="font-mono text-xs tracking-[0.2em] uppercase text-[var(--text-muted)] mb-3">
-          02 — Projects
+          01 — Projects
         </p>
 
         <h2
