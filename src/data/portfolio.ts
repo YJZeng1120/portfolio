@@ -30,7 +30,7 @@ export const profile = {
 export const skills: SkillGroup[] = [
   {
     category: "Mobile",
-    items: ["Flutter", "Dart", "MVVM", "Riverpod", "BLoC", "Flavorizr"]
+    items: ["Flutter", "Dart", "MVVM", "Riverpod", "BLoC", "Flavorizr", "Background Location"]
   },
   {
     category: "Web",
@@ -60,6 +60,7 @@ export const skills: SkillGroup[] = [
       "GitHub Actions",
       "Fastlane",
       "TestFlight",
+      "iOS / Android 商店上架管理",
       "Git Flow"
     ]
   }
