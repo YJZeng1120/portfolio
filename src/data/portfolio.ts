@@ -38,7 +38,7 @@ export const skills: SkillGroup[] = [
       "React",
       "Next.js",
       "TypeScript",
-      "TanStack Query / Table / Virtual",
+      "TanStack (Query, Table, Virtual)",
       "Zustand",
       "React Hook Form",
       "Zod"
@@ -50,11 +50,18 @@ export const skills: SkillGroup[] = [
   },
   {
     category: "API & Integration",
-    items: ["RESTful API", "MQTT", "Retrofit & Dio", "FCM", "App / Universal Links"]
+    items: ["RESTful API", "Dio & Retrofit", "MQTT", "App / Universal Links"]
   },
   {
     category: "DevOps & Tools",
-    items: ["GitLab CI/CD", "Fastlane", "Firebase App Distribution", "TestFlight", "Git Flow"]
+    items: [
+      "Firebase (Auth, Firestore, FCM, Crashlytics, App Distribution)",
+      "GitLab CI/CD",
+      "GitHub Actions",
+      "Fastlane",
+      "TestFlight",
+      "Git Flow"
+    ]
   }
 ];
 
@@ -64,7 +71,7 @@ export const projects: Project[] = [
     description:
       "Flutter 跨平台商店管理 App，採 BLoC 狀態管理，串接 RESTful API，整合 Firebase Auth 及 FCM 推播通知。",
     youtube: "8_l8sXE4EpE",
-    techs: ["Flutter", "Dart", "BLoC", "REST API", "Firebase"],
+    techs: ["Flutter", "Dart", "BLoC", "RESTful API", "Firebase (Auth / FCM)"],
     type: "side",
     github: "https://github.com/YJZeng1120/store_ease_demo",
     demo: "https://youtu.be/8_l8sXE4EpE"
@@ -74,7 +81,7 @@ export const projects: Project[] = [
     description:
       "以 SwiftUI + MVVM 架構開發的 iOS 即時通訊 App，使用 Firebase Auth 登入、Firestore 儲存訊息、Cloud Storage 管理媒體。",
     youtube: "ApJwXJoxOUQ",
-    techs: ["SwiftUI", "MVVM", "Firebase Auth", "Firebase Firestore", "Cloud Storage"],
+    techs: ["SwiftUI", "MVVM", "Firebase (Auth, Firestore, Cloud Storage)"],
     type: "side",
     github: "https://github.com/YJZeng1120/realtime_chat_demo",
     demo: "https://youtu.be/ApJwXJoxOUQ"
@@ -100,17 +107,19 @@ export const projects: Project[] = [
   {
     name: "CMS 車隊管理 App",
     description:
-      "上架 App Store / Google Play 的企業車隊管理 App。採 MVVM + Riverpod，串接 Type-safe API（Retrofit + Dio），整合 MQTT 即時通訊、背景 GPS 追蹤、FCM 推播、App/Universal Links，並以 GitLab CI/CD + Flavorizr 自動化多環境發布流程。",
+      "上架雙平台的企業車隊管理 App，採 MVVM + Riverpod 架構，整合 MQTT、Background Location 及 Firebase 生態系（FCM、Crashlytics、App Distribution），並以 GitLab CI/CD + Flavorizr 建立多環境自動化發布流程。",
     image: "/portfolio/images/projects/cms_app.png",
     techs: [
       "Flutter",
       "Dart",
       "Riverpod",
+      "MVVM",
+      "Dio / Retrofit",
       "MQTT",
-      "背景 GPS 追蹤",
-      "Firebase",
+      "Firebase (FCM, Crashlytics, App Distribution)",
+      "Background Location",
       "App / Universal Links",
-      "Type-safe API",
+      "GitLab CI/CD",
       "Flavorizr"
     ],
     type: "company",
