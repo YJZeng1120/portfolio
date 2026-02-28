@@ -39,7 +39,7 @@ export default function Hero() {
               </span>
             </h1>
 
-            <p className="fade-up fade-up-2 text-sm text-[var(--text-muted)] max-w-xl leading-relaxed mb-4">
+            <p className="fade-up fade-up-2 text-sm text-[var(--text-muted)] max-w-lg leading-relaxed mb-4">
               {profile.bio}
             </p>
 
