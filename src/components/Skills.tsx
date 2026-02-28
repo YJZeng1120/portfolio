@@ -10,7 +10,7 @@ export default function Skills() {
       <div className="max-w-5xl mx-auto px-6 md:px-8">
         {/* Section label */}
         <p className="font-mono text-xs tracking-[0.2em] uppercase text-[var(--text-muted)] mb-3">
-          03 — Skills
+          02 — Skills
         </p>
 
         {/* Heading */}
