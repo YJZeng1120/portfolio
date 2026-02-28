@@ -55,11 +55,11 @@ export const skills: SkillGroup[] = [
   {
     category: "DevOps & Tools",
     items: [
-      "Firebase (Auth, Firestore, FCM, Crashlytics, App Distribution)",
+      "Firebase (Auth, Firestore, FCM, Crashlytics)",
       "GitLab CI/CD",
       "GitHub Actions",
       "Fastlane",
-      "TestFlight",
+      "TestFlight / Firebase App Distribution",
       "iOS / Android 商店上架管理",
       "Git Flow"
     ]
