@@ -96,6 +96,21 @@ export const projects: Project[] = [
     github: "https://github.com/YJZeng1120/expense_manager_demo",
     demo: "https://youtu.be/V1HvQEdIZ74"
   },
+    {
+    name: "AI Stock Analysis App",
+    description:
+      "個人開發的 AI 股票分析 App，使用 SwiftUI 透過自建 MCP Server 串接 Yahoo Finance API，並結合 Firebase AI（Gemini）與 Function Calling，讓 AI 能即時取得市場數據並自動進行分析。",
+    youtube: "oVEhD4r3inM",
+    techs: [
+    "SwiftUI",
+    "Firebase AI (Gemini)",
+    "MCP Server",
+    "Function Calling"
+  ],
+    type: "side",
+    github: "https://github.com/YJZeng1120/StockAnalysisApp",
+    demo: "https://www.youtube.com/shorts/oVEhD4r3inM"
+  },
   {
     name: "Portfolio Website",
     description:
