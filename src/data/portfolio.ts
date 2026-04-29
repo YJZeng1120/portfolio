@@ -30,7 +30,16 @@ export const profile = {
 export const skills: SkillGroup[] = [
   {
     category: "Mobile",
-    items: ["Flutter", "Dart", "MVVM", "Riverpod", "BLoC", "Flavorizr", "Background Location"]
+    items: [
+      "Flutter",
+      "Dart",
+      "Platform Channel (Method/Event)",
+      "MVVM",
+      "Riverpod",
+      "BLoC",
+      "Flavorizr",
+      "Background Location"
+    ]
   },
   {
     category: "Web",
@@ -96,20 +105,32 @@ export const projects: Project[] = [
     github: "https://github.com/YJZeng1120/expense_manager_demo",
     demo: "https://youtu.be/V1HvQEdIZ74"
   },
-    {
+  {
     name: "AI Stock Analysis App",
     description:
       "個人開發的 AI 股票分析 App，使用 SwiftUI 透過自建 MCP Server 串接 Yahoo Finance API，並結合 Firebase AI（Gemini）與 Function Calling，讓 AI 能即時取得市場數據並自動進行分析。",
     youtube: "oVEhD4r3inM",
-    techs: [
-    "SwiftUI",
-    "Firebase AI (Gemini)",
-    "MCP Server",
-    "Function Calling"
-  ],
+    techs: ["SwiftUI", "Firebase AI (Gemini)", "MCP Server", "Function Calling"],
     type: "side",
     github: "https://github.com/YJZeng1120/StockAnalysisApp",
     demo: "https://www.youtube.com/shorts/oVEhD4r3inM"
+  },
+  {
+    name: "藍牙搜尋器 (Bluetooth Scanner)",
+    description:
+      "以 Flutter 開發的跨平台 BLE 掃描 App。不依賴第三方藍牙套件，透過原生 Platform Channel 直接呼叫 iOS CoreBluetooth 與 Android BluetoothLeScanner，實作即時裝置偵測、訊號強度(RSSI)追蹤與狀態感知功能。",
+    youtube: "5Nyi7YAlei0",
+    techs: [
+      "Flutter",
+      "Riverpod",
+      "Platform Channel (Method/Event)",
+      "Swift",
+      "Kotlin",
+      "SharedPreferences"
+    ],
+    type: "side",
+    github: "https://github.com/YJZeng1120/bluetooth-link",
+    demo: "https://youtube.com/shorts/5Nyi7YAlei0"
   },
   {
     name: "Portfolio Website",
